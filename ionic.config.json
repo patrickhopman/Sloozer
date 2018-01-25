@@ -1,0 +1,8 @@
+{
+  "name": "sloozer",
+  "app_id": "79819a8e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
