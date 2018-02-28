@@ -8,7 +8,6 @@ import { NavController } from 'ionic-angular';
 export class AlarmsPage {
 
   constructor(public navCtrl: NavController) {
-
   }
 
 }

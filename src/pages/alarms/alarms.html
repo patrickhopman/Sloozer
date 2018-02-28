@@ -6,34 +6,10 @@
 
 <ion-content>
   <ion-list>
-    <ion-item-sliding>
+    <ion-item-sliding *ngFor="let number of [0,1,2,3,4]">
       <ion-item>
-        <ion-label>07:00</ion-label>
-        <ion-toggle [(ngModel)]="alarm1"></ion-toggle>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="delete"></ion-icon>
-          delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-label>07:10</ion-label>
-        <ion-toggle [(ngModel)]="alarm2"></ion-toggle>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="delete"></ion-icon>
-          delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-label>07:20</ion-label>
-        <ion-toggle [(ngModel)]="alarm3"></ion-toggle>
+        <ion-label class="time">07:00</ion-label>
+        <ion-toggle [(ngModel)]="alarm" color="danger"></ion-toggle>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="danger">
